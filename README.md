@@ -5,6 +5,8 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/BinaryAbyssStudios/NetVitals?style=for-the-badge&labelColor=101418&color=b9c8da)
 ![GitHub repo size](https://img.shields.io/github/repo-size/BinaryAbyssStudios/NetVitals?style=for-the-badge&labelColor=101418&color=d3bfe6)
 
+---
+
 **Netvitals is a program that contains Tools about Networking and Cracking Wifi Hashes and Passwords Wirelessly.**
 
 - **in this Tool you can Find Everyone Location Using his IP address (internet protocol) and every url information in the built in url lookup.**
@@ -34,7 +36,7 @@
   **run it directly from source (Manually)**
     
   ***powershell method***
-``` bash
+```powershell
   git clone https://github.com/BinaryAbyssStudios/NetVitals.git
   cd NetVitals/
   py setup.py # do pip install -r requirements.txt for manual installation if you want.
