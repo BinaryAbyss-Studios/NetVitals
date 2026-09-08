@@ -17,7 +17,8 @@ else:
         venv_result = subprocess.run(
             [sys.executable, '-m', 'venv', '.venv'],
             text=True,
-            capture_output=True
+            capture_output=True,
+            timeout=60
         )
         print(venv_result.stderr)
         print(venv_result.stdout)
