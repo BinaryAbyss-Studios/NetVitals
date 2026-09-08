@@ -17,10 +17,13 @@ import shutil
 import subprocess
 import sys
 
-if shutil.which("nmap") is None:
-    print("[-] nmap  not found. This Program requires nmap.")
-    sys.exit() 
-print("[+] Found nmap Package")
+def system_check():
+    if shutil.which("nmap") is None:
+        print("[-] nmap  not found. This Program requires nmap.")
+        return
+    print("[+] Found nmap Package")
+
+system_check()
 
 OS_NAME = platform.system()  # "Linux", "Darwin" (macOS), or "Windows"
 
