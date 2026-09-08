@@ -37,23 +37,23 @@
     
   ***powershell method***
 ```powershell
-  git clone https://github.com/BinaryAbyssStudios/NetVitals.git
-  cd NetVitals/
+  git clone https://github.com/BinaryAbyssStudios/NetVitals-CLI.git
+  cd NetVitals-CLI/
   py setup.py # do pip install -r requirements.txt for manual installation if you want.
   py src/main.py # EntryPoint
 ``` 
 
    ***Command prompt method***
 ``` bash
-  git clone https://github.com/BinaryAbyssStudios/NetVitals.git
-  cd NetVitals/
+  git clone https://github.com/BinaryAbyssStudios/NetVitals-CLI.git
+  cd NetVitals-CLI/
   py setup.py # do pip install -r requirements.txt for manual installation if you want.
   py src/main.py # EntryPoint
 ``` 
 
 if your running it again after installation and run ( same directory (Same folder) )
 ``` bash
-  cd NetVitals/
+  cd NetVitals-CLI/
   .venv\Scripts\activate # if its powershell run ./.venv/Scripts/Activate.ps1
   py src/main.py # EntryPoint
 ``` 
@@ -65,15 +65,15 @@ if your running it again after installation and run ( same directory (Same folde
 - Method 1
   Install Project Zip File using the terminal git clone **(Directly from source)**:
 ``` bash
-  git clone https://github.com/BinaryAbyssStudios/NetVitals.gits
-  cd NetVitals/
+  git clone https://github.com/BinaryAbyssStudios/NetVitals-CLI.gits
+  cd NetVitals-CLI/
   python3 setup.py # do pip install -r requirements.txt for manual installation if you want.
   python3 src/main.py # EntryPoint
 ```
 
 if you want to run after installation again (same directory): 
 ``` bash
-  cd NetVitals/
+  cd NetVitals-CLI/
   source .venv/bin/activate # Activate Virtual Enviroment # if fish terminal add .fish at the end (IF HAVE VIRTUAL ENVIROMENT)
   python3 src/main.py # EntryPoint
 ```
