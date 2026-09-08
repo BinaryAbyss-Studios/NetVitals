@@ -8,7 +8,24 @@ import webbrowser
 import platform
 import json
 from datetime import datetime
+import threading
 os_name = platform.system()
+
+def spinner(stop_event, text="Loading"):
+    frames = "|/-\\"
+    i = 0
+    while not stop_event.is_set():
+        sys.stdout.write(f"\r{frames[i % len(frames)]} {text}...")
+        sys.stdout.flush()
+        i += 1
+        time.sleep(0.1)
+    sys.stdout.write(f"\r Done!            \n")
+    sys.stdout.flush()
+
+stop_event = threading.Event()
+t = threading.Thread(target=spinner, args=(stop_event,))
+t.start()
+
 try: 
     import Themes as T # Themes Module for coloers and customization
     from Systems.Tools import bruteforcer
@@ -243,7 +260,8 @@ def More_Options():
         else:
             print(f"{T.LOG_ERROR} Invalid Input")
             
-
+stop_event.set()
+t.join()
 def EntryBoot():
     print(f"""
 {Banner}
