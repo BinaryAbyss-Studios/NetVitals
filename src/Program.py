@@ -19,7 +19,7 @@ def spinner(stop_event, text="Loading"):
         sys.stdout.flush()
         i += 1
         time.sleep(0.1)
-    sys.stdout.write(f"\r Done!            \n")
+    sys.stdout.write(f"\rDone!            \n")
     sys.stdout.flush()
 
 stop_event = threading.Event()
